@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restore-Desktop Panel</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <div class="main-title">Restore Desktop</div>
+        <div class="creator">Created by Dukentre</div>
+
+        <div class="auth">
+            <div class="title">Авторизация</div>
+            <div class="room-name">Название комнаты</div>
+            <input type="text" class="room-name-input">
+            <div class="room-pass">Пароль от комнаты</div>
+            <input type="password" class="room-pass-input">
+            <div class="buttons">
+                <button class="submit-btn">Войти</button>
+                <button class="create-room-btn">Создать комнату</button>
+            </div>
+        </div>
+        <div class="create" style="display: none;">
+                <div class="title">Создание новой<br>комнаты</div>
+                <div class="room-name">Название комнаты</div>
+                <input type="text" class="room-name-input">
+                <div class="room-name">Пароль от комнаты</div>
+                <input type="password" class="room-pass-input">
+                <div class="buttons">
+                    <button class="submit-btn">Создать комнату</button>
+                    <button class="back-to-auth-btn">Назад</button>
+                </div>
+        </div>
+        <div class="control-panel" style="display: none;">
+            <div class="title">Панель управления</div>
+            <div class="room">Название комнаты: <span class="name"></span></div>
+            <div class="count">Кол-во подключений: <span class="count-users">0</span></div>
+            <div class="buttons">
+                <button class="restore-desktop-btn">Запустить восстановление</button>
+                <button class="logout-btn">Выйти</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
